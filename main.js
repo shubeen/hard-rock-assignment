@@ -3,7 +3,7 @@ function searchSong(){
     fetch(`https://api.lyrics.ovh/suggest/${songSearch}`)
     .then(res => res.json())
     .then(data =>{      
-        console.log(data);
+        // console.log(data);
         
             const arrays = data.data;
             for (let i=0; i< 10 ; i++){
